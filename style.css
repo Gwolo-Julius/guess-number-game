@@ -1,0 +1,98 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        text-decoration: none;
+        color: #fefefe;
+        font-family: "Courier New", Courier, monospace;
+        border: none;
+      }
+
+      body {
+        background-color: #222;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 5%;
+        align-items: center;
+      }
+
+      .btn {
+        background-color: #fff;
+        color: #123;
+        border-radius: 0.5rem;
+        padding: 0.8rem 2rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+        transition: 0.3s;
+        font-weight: 600;
+      }
+
+      .btn:hover {
+        background-color: rgb(234, 234, 234);
+      }
+
+      .heading {
+        text-align: center;
+        font-size: 3.4rem;
+        margin-bottom: 4.8rem;
+      }
+
+      .header__container {
+        border-bottom: 8px solid;
+        position: relative;
+        margin-bottom: 5rem;
+      }
+
+      .s__number {
+        background-color: #fefefe;
+        color: #123;
+        padding: 0.6rem 2rem;
+        font-size: 4rem;
+        font-weight: 800;
+        position: absolute;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+
+      .put__yourNumber {
+        border: 3px solid #fefefe;
+        padding: 1.2rem;
+        background-color: transparent;
+      }
+
+      .main__content {
+        display: flex;
+        justify-content: space-between;
+        margin: 3rem 2.6rem;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      @media screen and (max-width: 767px) {
+        .top {
+          flex-direction: column;
+          row-gap: 2rem;
+        }
+
+        .main__content {
+          flex-direction: column;
+          row-gap: 3rem;
+          width: 90%;
+          margin: auto;
+        }
+      }
